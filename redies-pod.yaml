@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redies-pod
+  labels:
+    name: redies-pod
+    app: demo-voting-app
+spec:
+  containers:
+    - name: redies
+      image: redies
+      ports:
+        - containerPort: 6379
